@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option go_package = "./rpcpb/";
+
+service Game {
+    rpc Stream(stream Request) returns (stream Response);
+}
+
+message Request {
+    int32 type = 1;
+    bytes payload = 2;
+}
+
+message Response {
+    int32 type = 1;
+    bytes payload = 2;
+}
