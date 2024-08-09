@@ -10,7 +10,7 @@ import (
 
 	"github.com/xupin/gateway-grpc/common/network/tcp"
 	"github.com/xupin/gateway-grpc/common/proto/rpc/rpcpb"
-	"github.com/xupin/gateway-grpc/gate/grpcpool"
+	"github.com/xupin/gateway-grpc/common/utils/grpcpool"
 )
 
 type gateway struct {
